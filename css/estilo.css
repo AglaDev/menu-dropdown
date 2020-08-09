@@ -1,0 +1,60 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #EFEFEF
+}
+
+/*Configurações iniciais para o ul,a*/
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.content-menu{
+	width: 270px;
+	height: 100%;
+	position: fixed;
+	background-color: #FFFFFF;
+}
+
+/*MENU*/
+ul.menu{
+	padding:30px 0;
+}
+ul.menu li{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+ul.menu li a{
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 15px;
+	color: #333333;
+
+}
+ul.menu li a:hover{
+	background-color: #333333;
+	color: #FFFFFF
+}
+ul.menu li a .icon-btn-submenu{
+	font-weight: bolder;
+	transition: .4s
+}
+.btn-menu-active{
+	background-color: #333;
+}
+
+/*SUBMENU*/
+ul.sub-menu{
+	padding-left: 10px;
+	background-color:#CCCCCC;
+	max-height: 0;
+	transition: .4s;
+}
+
+ul.sub-menu li a{
+	background-color:#FFFFFF ;
+}
